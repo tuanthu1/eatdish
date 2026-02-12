@@ -1,0 +1,27 @@
+const express = require('express');
+const router = express.Router();
+const adminController = require('../controllers/adminController');
+
+router.get('/stats', adminController.getStats);
+router.get('/users', adminController.getAllUsers);
+router.get('/feedbacks', adminController.getAllFeedbacks);
+router.delete('/users/:id', adminController.deleteUser);
+router.delete('/feedbacks/:id', adminController.deleteFeedback);
+router.get('/stats', adminController.getDashboardStats);
+router.get('/recipes', adminController.getAllRecipes);
+router.delete('/recipes/:id', adminController.deleteRecipe);
+router.put('/:id/premium', adminController.updateUserPremium);
+router.put('/users/:id/verify', adminController.toggleVerify);
+router.put('/recipes/:id/premium', adminController.toggleRecipePremium);
+router.put('/approve/:id', adminController.approveRecipe);
+router.get('/pending', adminController.getPendingRecipes);
+router.get("/history",  adminController.getAllPayments);
+router.put('/reset/:id', adminController.resetPass);
+router.post('/packages', adminController.createPackage);
+router.delete('/packages/:id', adminController.deletePackage);
+router.put('/packages/:id', adminController.updatePackage);
+router.get('/coupons', adminController.getAllCoupons);
+router.post('/coupons', adminController.createCoupon);
+router.delete('/coupons/:id', adminController.deleteCoupon);
+router.put('/coupons/:id/status', adminController.toggleCouponStatus);
+module.exports = router;
