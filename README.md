@@ -42,8 +42,8 @@ EatDish-Project/
 ### 1. Clone the repository
 
 ```bash
-git clone <your-repo-url>
-cd EatDish-Project
+git clone https://github.com/tuanthu1/eatdish.git
+cd eatdish
 ```
 
 ### 2. Install frontend dependencies
