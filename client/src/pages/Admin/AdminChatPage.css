@@ -1,0 +1,130 @@
+.admin-chat-page {
+    min-height: 100vh;
+    background: #fffaf2;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.admin-chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.admin-chat-header h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #2d3436;
+}
+
+.admin-chat-header p {
+    margin: 6px 0 0;
+    color: #636e72;
+}
+
+.admin-chat-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.admin-chat-btn {
+    border: none;
+    border-radius: 12px;
+    padding: 10px 16px;
+    background: #ff9f1c;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.admin-chat-btn.secondary {
+    background: #f1f2f6;
+    color: #2d3436;
+}
+
+.admin-chat-quick {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.admin-chat-chip {
+    border: 1px solid #ffe0b2;
+    background: #fff;
+    border-radius: 999px;
+    padding: 8px 12px;
+    cursor: pointer;
+    color: #d35400;
+    font-weight: 600;
+}
+
+.admin-chat-box {
+    flex: 1;
+    min-height: 460px;
+    max-height: 62vh;
+    overflow-y: auto;
+    border-radius: 20px;
+    padding: 18px;
+    background: #fff;
+    border: 1px solid #ffe8cc;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+}
+
+.admin-chat-row {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.admin-chat-row.user {
+    justify-content: flex-end;
+}
+
+.admin-chat-bubble {
+    max-width: 78%;
+    padding: 10px 12px;
+    border-radius: 14px;
+    line-height: 1.45;
+}
+
+.admin-chat-bubble.bot {
+    background: #fff7ed;
+    color: #7c2d12;
+}
+
+.admin-chat-bubble.user {
+    background: #ff9f1c;
+    color: #fff;
+}
+
+.admin-chat-input-wrap {
+    display: flex;
+    gap: 10px;
+}
+
+.admin-chat-input-wrap input {
+    flex: 1;
+    border: 1px solid #ffd8a8;
+    border-radius: 12px;
+    padding: 12px 14px;
+    font-size: 14px;
+    outline: none;
+}
+
+@media (max-width: 768px) {
+    .admin-chat-page {
+        padding: 14px;
+    }
+
+    .admin-chat-box {
+        min-height: 380px;
+        max-height: 56vh;
+    }
+
+    .admin-chat-bubble {
+        max-width: 90%;
+    }
+}

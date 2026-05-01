@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <link rel="icon" type="image/png" href="/logo.png" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#ff9f1c" />
+    <meta name="description" content="EatDish - Cộng đồng chia sẻ công thức nấu ăn và ẩm thực tuyệt vời" />
+
+    <title>EatDish - Khám phá món ngon mỗi ngày</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body, html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #f9fafc; 
+        font-family: 'Poppins', sans-serif;
+      }
+      #root {
+        width: 100%;
+        height: 100%;
+      }
+      
+      .eatdish-preloader {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background: #f9fafc;
+      }
+      .eatdish-spinner {
+        width: 50px;
+        height: 50px;
+        border: 5px solid #ffeaa7;
+        border-top-color: #ff9f1c; 
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin-bottom: 20px;
+      }
+      .eatdish-loading-text {
+        color: #ff9f1c;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        animation: pulse 1.5s ease-in-out infinite;
+      }
+
+      /* Animation */
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+      @keyframes pulse {
+        0%, 100% { opacity: 0.5; }
+        50% { opacity: 1; }
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/index-8YWqosA2.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BM9RXRY-.css">
+  </head>
+  
+  <body>
+    <div id="root">
+      <div class="eatdish-preloader">
+        <div class="eatdish-spinner"></div>
+        <div class="eatdish-loading-text">EATDISH</div>
+      </div>
+    </div>
+    
+  </body>
+</html>
